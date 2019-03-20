@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="live_feed=true" extends="task" label="Create New Incident" max_length="40" name="x_58872_needit_testing_app" sizeclass="3" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Environment" mandatory="true" max_length="40" name="environment" type="string">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="Integration" sequence="0"/>
+                <element inactive_on_update="false" label="Production" sequence="0" value="Production"/>
+                <element inactive="true" inactive_on_update="true" label="Production" sequence="0" value="Choice 4"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 2" sequence="1" value="UAT"/>
+                <element inactive_on_update="false" label="UAT" sequence="1" value="Choice 2"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="2" value="Development"/>
+                <element inactive_on_update="false" label="Development" sequence="2" value="Choice 3"/>
+                <element inactive="true" inactive_on_update="true" label="choice 4" sequence="3" value="Integration"/>
+                <element inactive_on_update="false" label="IDLE" sequence="3" value="idle"/>
+            </choice>
+        </element>
+    </element>
+</database>
